@@ -1,8 +1,7 @@
 // contributers Alicia Williams, Erin Mehaffey,Jack Polson, Sharnetta Lamar
 const sampleArray = [
     469, 755, 244, 245, 758, 450, 302, 20, 712, 71, 
-    456, 21, 398, 339, 882, 848, 179, 535, 940, 472,
-];
+    456, 21, 398, 339, 882, 848, 179, 535, 940, 472];
 const mainElement=document.querySelector('.katas')
 
 // heading and adding
@@ -249,9 +248,31 @@ kata16heading.append('Kata 16')
 const kata16P=document.createElement('p')
 mainElement.append(kata16P)
      let totalSample=0
-     for(index=0;index<=sampleArray.length;index++){
+     for(index=0;index<sampleArray.length;index++){
             let numberadd=sampleArray[index]
          totalSample=totalSample+numberadd
      }
         
  kata16P.append(totalSample)
+
+ //kata 17
+const kata17heading=document.createElement('h2')
+mainElement.append(kata17heading)
+kata17heading.append('Kata 17')
+  // kata 17 p
+const kata17P=document.createElement('p')
+mainElement.append(kata17P)
+   let smallNum=Math.min(...sampleArray)
+        
+ kata17P.append(smallNum)
+
+  //kata 18
+const kata18heading=document.createElement('h2')
+mainElement.append(kata18heading)
+kata18heading.append('Kata 18')
+  // kata 18p
+const kata18P=document.createElement('p')
+mainElement.append(kata18P)
+   let largeNum=Math.max(...sampleArray)
+        
+ kata18P.append(largeNum)
